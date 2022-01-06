@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style.css>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Ghaida's Website</title>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--ggl fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
+    <!--socials icons CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style> 
+    .logo, h1{
+        font-family: 'Press Start 2P', cursive;
+     }
+     body{
+        font-family: 'Changa', sans-serif;
+     }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="logo"> Ghaida </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>  
+
+        <div class="navbar-links">
+         <ul>
+            <li><a href="#myImg">About Me</a></li> <!--creeper icon-->
+            <li><a href="#skills">Skills</a></li> <!--sowrd-->
+            <li><a href="#portfolio">Portfolio</a></li> <!--chestplate-->
+            <li><a href="#contact">Contact</a></li> <!--earth-->
+         </ul>
+        </div>
+        <!-- <img src="images/moon.png" id="icon"> -->
+    </nav>
+
+    <section id="aboutMe">
+        <h1> <span >01</span> About Me</h1>
+        <img id="myImg" src="/images/me.png" alt="my img">
+        <h1 data-aos="fade-up" data-aos-duration="1000">I'm </h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Ghaida Alsaeed</h1>
+
+        <p data-aos="fade" data-aos-duration="850" data-aos-delay="300">
+            A CS student at KFU who's aiming to become a full stack web developer.
+            I'm interested in editting/ designing in general and I'm always open to learn.
+        </p>
+    </section>
+    
+    <section id="skills">
+        <h1><span>02</span> Skills</h1>
+            <div class="skill-bars"data-aos="fade-left" data-aos-duration="1000">
+                <div class="bar">
+                  <div class="info">
+                    <span>HTML &nbsp;(75%)</span>
+                  </div>
+                  <div class="progress-line html">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS &nbsp;(45%)</span>
+                  </div>
+                  <div class="progress-line css">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>JS &nbsp;(10%)</span>
+                  </div>
+                  <div class="progress-line JS">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Video Editting &nbsp;(45%)</span>
+                  </div>
+                  <div class="progress-line vidEditting">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+        </p>
+    </section>
+    
+    <section id="portfolio">
+        <h1><span>03</span> Portfolio</h1>
+        <p data-aos="fade-right" data-aos-duration="1000">
+            .................................................................<br>
+            ............................ IN ................................<br>
+            ...................... PROGRESS .......................<br>
+            ................................................................
+        </p>
+    </section>
+    
+    <section id="contact">
+       <h1><span>04</span> Contact</h1> 
+
+        <div data-aos="fade" data-aos-duration="850" class="box">
+            <div class="socialIcons">
+               <a href="https://twitter.com/x_ghaidaa_x" target="_blank" ><i class="fab fa-twitter"></i></a>
+                
+               <a href="https://github.com/Gh4ida" target="_blank" ><i class="fab fa-github-alt"></i></a> 
+                
+               <a href="https://www.linkedin.com/in/ghaida-alsaeed-a69413220/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    
+<footer>
+    <div class="container">
+       <img id="waves" src="/images/wave.png" alt="waves">
+       <div class="copyRights">Created By <span style="color: black;"> Ghaida</span> &nbsp; |&nbsp; &copy; All Copyrights Reserved.<div>
+    </div>   
+</footer>
+
+
+    <script src="script.js" defer></script>
+    <!--AOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+
+</body>
+</html>

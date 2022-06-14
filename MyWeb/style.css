@@ -11,7 +11,17 @@ html{
 
 
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: var(--primary-color);
+}
+
+:root{
+    --primary-color:#202020;
+    --secondary-color:#FFFFFF; 
+}
+
+.light-theme{
+    --primary-color:#e8e8e8;
+    --secondary-color:#202020;
 }
 
 .navbar{
@@ -30,6 +40,15 @@ body{
     padding: 5px;
     margin-left: 50px;
 }
+
+#sunToggle{
+    cursor: pointer;
+    width:21px;
+    left:272px;
+    top: 44px; 
+    position: absolute;
+}/*applies also on the moon icon since we toggle em in js*/
+
 
 .navbar-links {
     height: 100%;
@@ -101,16 +120,17 @@ h1 span{
     width: 250px;
     margin-top: 35px;
     margin-bottom: 35px;
+    
 }
 
 #aboutMe h1{
-   color: white;
+   color: var(--secondary-color);
    letter-spacing: 1px;
    margin-bottom: 40px;
 }
 
 #aboutMe p{
-    color: white;
+    color: var(--secondary-color);
     width:50% ;
     text-align: center;
     margin-bottom: 50px;
@@ -134,7 +154,7 @@ h1 span{
  }
 
 #skills h1{
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 60px;
@@ -142,13 +162,13 @@ h1 span{
 }
 
 #skills p{
-    color: white;
+    color: var(--secondary-color);
     width:50% ;
     text-align: center;
 }
 
 #portfolio h1{
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 100px;
@@ -156,9 +176,9 @@ h1 span{
 }
 
 #portfolio p{
-    color: white;
+    color: var(--secondary-color);
     width:50% ;
-    text-align: center;;
+    text-align: center;
 }
 
 .container {
@@ -172,7 +192,7 @@ h1 span{
 
 .copyRights{
     font-size: .85rem;
-    color: rgb(99, 96, 96);
+    color: rgb(49, 47, 47);
     bottom:10px;
     left: 10px;
     position: absolute;
@@ -180,13 +200,13 @@ h1 span{
 }
 
 #contact h1{
-    color: white;
+    color: var(--secondary-color);
     margin-bottom: 100px;
     letter-spacing: 1px;
 }
 
 #contact p{
-    color: white;
+    color: var(--secondary-color);
     padding: 35px;
     letter-spacing: 1px;
 }
@@ -194,11 +214,12 @@ h1 span{
 #contact .box{
    height:150px;
    width: 50%;
-   background: white;
+   background:#FFFFFF;
    border-radius: 30px;
    display: flex;
    justify-content:space-around;
    align-items: center;
+   box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
 
 #contact .box .socialIcons{
@@ -238,7 +259,7 @@ h1 span{
     padding: 25px 30px;
     width: 50%;
     background: #fff;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1); 
     border-radius: 10px;
   }
   .skill-bars .bar{
@@ -327,13 +348,6 @@ h1 span{
     animation: showText2 0.5s 1.5s linear forwards;
   }
   
-  /*drak moodx
-   #icon{
-       width: 30px;
-       cursor: pointer;
-       margin-right: 30px;
-   }
-   */
 
 /*for smaller screens */
 @media(max-width:860px){ 
@@ -376,6 +390,15 @@ h1 span{
         padding: 12px;
         margin-left: 50px;
     }
+
+    #sunToggle{
+        left:210px;
+        top: 12px;
+        cursor: pointer;
+        position: absolute;
+        width:18px;
+     } 
+
     .navbar-links ul{
         display: flex;
         margin:0;

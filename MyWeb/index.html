@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=style.css>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
      <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Ghaida's Website</title>
@@ -19,9 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap" rel="stylesheet">
-    <!--socials icons CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CDN to take socials icons &drak mode-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <style> 
     .logo, h1{
@@ -45,18 +46,21 @@
 
         <div class="navbar-links">
          <ul>
-            <li><a href="#myImg">About Me</a></li> <!--creeper icon-->
-            <li><a href="#skills">Skills</a></li> <!--sowrd-->
-            <li><a href="#portfolio">Portfolio</a></li> <!--chestplate-->
-            <li><a href="#contact">Contact</a></li> <!--earth-->
+            <li><a href="#myImg">About Me</a></li> 
+            <li><a href="#skills">Skills</a></li> 
+            <li><a href="#portfolio">Portfolio</a></li> 
+            <li><a href="#contact">Contact</a></li> 
          </ul>
         </div>
-        <!-- <img src="images/moon.png" id="icon"> -->
+        <!-- if u wanna use icons form boostrab/fontawesome -->
+        <!-- <i class="fa-solid fa-sun" id="sunToggle"></i> -->
+        <!-- moon icon id is 'bi-moon' -->
+        <img src="images/sun.png"id=sunToggle>
     </nav>
 
     <section id="aboutMe">
         <h1> <span >01</span> About Me</h1>
-        <img id="myImg" src="/images/me.png" alt="my img">
+        <img id="myImg" src="images/me.png" alt="my img">
         <h1 data-aos="fade-up" data-aos-duration="1000">I'm </h1>
         <h1 data-aos="fade-up" data-aos-duration="1000">Ghaida Alsaeed</h1>
 
@@ -131,8 +135,8 @@
     
 <footer>
     <div class="container">
-       <img id="waves" src="/images/wave.png" alt="waves">
-       <div class="copyRights">Created By <span style="color: black;"> Ghaida</span> &nbsp; |&nbsp; &copy; All Copyrights Reserved.<div>
+       <img id="waves" src="images/wave.png" alt="waves">
+       <div class="copyRights">Created By &nbsp;Ghaida &nbsp; |&nbsp; &copy; All Copyrights Reserved.<div>
     </div>   
 </footer>
 

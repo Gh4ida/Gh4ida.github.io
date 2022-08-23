@@ -312,10 +312,10 @@ h1 span{
     width: 75%;
   }
   .bar .progress-line.css span{
-    width: 45%;
+    width: 50%;
   }
   .bar .progress-line.JS span{
-    width: 10%;
+    width: 40%;
   }
   .bar .progress-line.vidEditting span{
     width: 45%;

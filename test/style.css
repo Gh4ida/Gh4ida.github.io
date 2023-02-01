@@ -1,6 +1,7 @@
 body{
     background-image: radial-gradient(#e17327, #e17327,#932191);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex; 
 }
 .glass{

@@ -1,0 +1,37 @@
+body{
+    background-image: radial-gradient(#e17327, #e17327,#932191);
+    display: flex; 
+}
+.glass{
+    margin:50px auto;
+    max-width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    padding:35px 40px;
+    background:white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* -webkit-backdrop-filter: blur(10px); */
+
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.glass h2{
+    padding-bottom: 20px;
+}
+
+@media(max-width:860px){ 
+    .glass{
+        margin:50px auto;
+        max-width: 250px;
+        height: 350px;
+    }
+    .glass h2{
+        padding-bottom: 0px;
+    }
+}

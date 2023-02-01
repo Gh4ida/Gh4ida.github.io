@@ -21,6 +21,7 @@ body{
 
     text-align: center;
     line-height: 1.6rem;
+    
 }
 
 .glass h2{
@@ -29,7 +30,7 @@ body{
 
 @media(max-width:860px){ 
     .glass{
-        margin:190px auto;
+        margin-top: 200px;
         max-width: 250px;
         height: 350px;
     }
